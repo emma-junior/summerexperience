@@ -44,7 +44,7 @@ const Footer = () => {
       <div className="">
         <p className="poweredby">
           <RiCopyrightLine />
-          Summer Experience 2022! | Powered by HigherFeats tutors
+          Summer Experience 2022! | Powered by HigherFeats NG
         </p>
       </div>
     </div>
