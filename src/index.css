@@ -1,13 +1,348 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Fascinate", cursive;
+  font-family: "Open Sans", sans-ser;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #f81765;
+  height: 80px;
+}
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+}
+.navbar-btn {
+  background: #111;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  font-weight: 600;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.navbar-btn:hover {
+  background-color: #444;
+}
+.logo {
+  width: 140px;
+  height: 120px;
+  margin-left: 30px;
+}
+.summer-wrapper {
+  width: 90%;
+  margin: 30px auto;
+}
+.summer-writeup > p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+.summer-image {
+  display: flex;
+  width: 350px;
+  height: 350px;
+  border-radius: 70%;
+  margin: auto;
+  justify-content: center;
+}
+.summerimage-wrapper {
+  position: relative;
+}
+.summer-deco {
+  opacity: 0;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 220px;
+  top: 180px;
+  z-index: -1;
+}
+.skills-topic {
+  background: #111;
+  /* padding-bottom: 10px; */
+}
+.logo-two {
+  width: 100px;
+  display: flex;
+  margin: 0px auto;
+}
+.skillstopic-wrapper {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.card-wrapper {
+  width: 100%;
+  margin-top: 30px;
+}
+.card-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.card {
+  margin: 20px auto;
+}
+.card > p {
+  margin: 8px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.card-image {
+  width: 300px;
+  height: 250px;
+}
+.register-btn {
+  background: #f81765;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 8px 40px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.register-btn:hover {
+  background: #df467b;
+}
+.higher-feat {
+  margin-top: 30px;
+  position: relative;
+}
+.learn-img {
+  width: 100%;
+  height: 400px;
+}
+.about {
+  background: #000;
+  color: #fff;
+  width: 70%;
+  position: absolute;
+  padding: 25px 20px;
+  left: 35px;
+  top: 250px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.enquire {
+  background: #f81765;
+  color: #fff;
+  width: 130px;
+  padding: 5px;
+  font-weight: bold;
+  margin: 15px 0;
+  text-align: center;
+}
+.location-container {
+  margin-top: 350px;
+  background-image: url("/src/images/camp-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 10px;
+}
+.location-wrapper {
+  margin: 15px auto;
+  background: #fff;
+  justify-content: space-between;
+  /* color: #111; */
+  padding: 20px;
+  border-radius: 15px;
+}
+.location {
+  width: 300px;
+  margin-top: 20px;
+}
+.location > h3 {
+  text-align: center;
+}
+.date {
+  width: 350px;
+}
+.stopwatch {
+  width: 350px;
+}
+.icon {
+  font-size: 80px;
+  color: #f81765;
+  text-align: center;
+}
+.question {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.footer-container {
+  margin-top: 40px;
+  background: #111;
+  color: #fff;
+}
+.socialmedia-icons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.social-icon {
+  font-size: 35px;
+  color: #fff;
+  margin: 0 5px;
+}
+.telephone {
+  display: flex;
+  width: 100%;
+  margin: 10px auto;
+  justify-content: center;
+}
+.tel-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.phone-no {
+  font-size: 18px;
+  font-weight: bold;
+}
+.email-icon {
+  font-size: 20px;
+  margin-right: 15px;
+}
+.email-wrapper {
+  display: flex;
+  margin: 10px auto;
+  width: 100%;
+  justify-content: center;
+}
+.poweredby {
+  font-weight: bold;
+  text-align: center;
+}
+.line {
+  height: 0.5px;
+  width: 80%;
+  background-color: #555;
+  margin: 20px auto;
+}
+@media only screen and (min-width: 768px) {
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card-image {
+    width: 220px;
+    height: 180px;
+  }
+  .location-container {
+    margin-top: 200px;
+    padding: 20px 0;
+  }
+  .location-wrapper {
+    display: flex;
+    width: 90%;
+  }
+  .location {
+    width: 220px;
+    margin-top: 20px;
+  }
+  .summer-image {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .navbar-btn {
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+  }
+  .logo {
+    width: 250px;
+    margin-left: 30px;
+  }
+
+  .summer-wrapper {
+    display: flex;
+    width: 80%;
+    margin: 80px auto;
+    justify-content: space-between;
+  }
+  .summer-writeup {
+    width: 500px;
+    margin-top: 95px;
+  }
+  .summer-writeup > p {
+    margin: 20px 0;
+    font-size: 18px;
+  }
+  .summer-writeup > h1 {
+    font-size: 40px;
+  }
+  .summer-image {
+    width: 450px;
+    height: 450px;
+  }
+  .summer-deco {
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+  }
+  .logo-two {
+    width: 130px;
+  }
+  .skillstopic-wrapper > p {
+    font-size: 30px;
+  }
+
+  .card {
+    margin: 0 15px;
+  }
+  .card-image {
+    width: 350px;
+    height: 300px;
+  }
+  .register-btn {
+    margin: 20px 30px;
+    font-size: 17px;
+  }
+  .learn-img {
+    height: 600px;
+  }
+
+  .about {
+    width: 550px;
+    padding: 25px 20px;
+    left: 550px;
+    top: 400px;
+  }
+  .about > h1 {
+    font-size: 50px;
+  }
+  .about > p {
+    margin-top: 15px;
+  }
+
+  .location {
+    width: 350px;
+  }
+
+  .telephone {
+    display: flex;
+    width: 15%;
+    margin: 10px auto;
+    justify-content: space-between;
+  }
+  .tel-icon {
+    font-size: 20px;
+  }
 }
