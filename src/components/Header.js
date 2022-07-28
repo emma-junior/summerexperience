@@ -1,6 +1,6 @@
 import React from "react";
 import summer from "../images/summer-pic.jpg";
-import deco from "../images/1618916.svg";
+// import deco from "../images/1618916.svg";
 // import shape from "../images/shape.png";
 
 const Header = () => {
@@ -18,7 +18,7 @@ const Header = () => {
       </div>
       <div className="summerimage-wrapper">
         <img className="summer-image" src={summer} alt="summer" />
-        <img className="summer-deco" src={deco} alt="summer" />
+        {/* <img className="summer-deco" src={deco} alt="summer" /> */}
         {/* <img className="shape" src={shape} alt="summer" /> */}
       </div>
     </div>
